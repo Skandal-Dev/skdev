@@ -18,6 +18,7 @@ const App = () => {
 		<Particle/>
 		*/}
 		
+		<Particle/>
 
 		<img className="center_logo" src={logo}/>
 
