@@ -1,0 +1,102 @@
+
+$green-cpt: #a4f7adb5
+$red-cpt: #dd6060b5
+$orange-cpt: #d9804bc7
+$perfect-cpt: #b8ff98eb
+
+
+body
+    #competence
+        overflow: hidden
+        ul
+            list-style: none
+            display: flex
+            clear: both
+            overflow: hidden
+            flex-wrap: wrap
+            margin: 5px
+            li 
+                margin: 0 10px
+                text-align: center
+                font-size: 11px
+                color: #ffc0cb99
+                line-height: 26px
+        .wrap
+            flex-wrap: wrap
+            display: flex
+            clear: both
+            overflow: hidden
+        
+        .title-competence
+            color: #d9804b
+            font-size: 14px
+            text-shadow: 0px 0px 5px #28223166
+            margin: 0 10px
+            color: hsl(295deg 18% 45%)
+            font-size: 0.7rem
+            text-shadow: 0px 0px 5px #28223166
+            margin: 10px
+            font-weight: 200
+            letter-spacing: 0.1rem
+            background: #2d1a2c69
+            display: inline-block
+            padding: 0.2rem
+    
+        .hr
+            width: 55vw
+            background: #68486918
+            height: 1px
+            margin: 5px 10px
+            margin-top: 10px
+            box-sizing: content-box
+            margin-top: -5px
+            -webkit-filter: drop-shadow(5px 5px 5px #222)
+            filter: drop-shadow(5px 5px 5px #222)
+
+            
+    .object-competence
+        width: 64px
+        height: 64px
+        border-radius: 5px
+        background: rgba(58, 48, 74, 0.48)
+        border: 1px solid #ffffff36
+        position: relative
+        overflow: hidden
+        cursor: pointer
+        &:hover img
+            opacity: 0.9
+        &::before
+            content: ""
+            position: absolute
+            height: 5px
+            bottom: 0
+            left: 0
+            box-shadow: inset 0px 8px 0px 0px #494b4d4d
+        &.green-cpt::before
+            background: $green-cpt
+        &.perfect-cpt::before
+            background: $perfect-cpt
+        &.orange-cpt::before
+            background: $orange-cpt
+        &.red-cpt::before
+            background: $red-cpt
+        &.cpt-100p::before
+            width: 100%
+        &.cpt-80p::before
+            width: 80%
+        &.cpt-60p::before
+            width: 60%
+        &.cpt-40p::before
+            width: 50%
+        
+        img
+            display: block
+            margin: auto
+            margin-top: 8px
+            width: 40px
+            opacity: 0.6
+            -webkit-filter: drop-shadow(5px 5px 5px #222)
+            filter: drop-shadow(5px 5px 5px #222)
+            transform: scale(1.2)
+        .adjust-cpt-img
+            transform: scale(1)
