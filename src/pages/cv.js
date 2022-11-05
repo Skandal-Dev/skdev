@@ -17,19 +17,43 @@ class CV extends React.Component{
                 <br/>
                 <div className="hr"></div>
                 <h1 className="title-competence">
-                    Etudes & Diplomes 
+                    Expériences
                 </h1>
                 <div className="hr"></div>
 
-                <ul>
-                    <li className="object-cv cpt-100p grey-cpt">Epita <span> Cycle Ingénieur</span>2017-2022</li>
-                    <li className="object-cv cpt-100p grey-cpt">Epita <span> Classe Préparatoire</span>2015-2017</li>
-                    <li className="object-cv cpt-100p grey-cpt">Bac STI2D <span>Mention Très Bien</span>2015</li>
-                    <li className="object-cv cpt-100p grey-cpt">Brevet <span>Mention Très Bien</span>2013</li>
+                <ul className="bg-cmd">
+            
+                    <li className="object-details object-">
+                    
+                        <span>2019/2020 - Développeur Web/Mobile Full Stack @ Sogeti Lab's - Sogeti</span>
+                        <p>Stage de 4 mois, méthode de travail en groupe: agilité Scrum</p>
+                        <p>HTML, CSS, PHP, JS, RUBY, ANGULARJS, VUE.JS, REACT JS, BRAIN.JS</p>
+                        <p>Python, Symfony, Laravel</p>
+                    </li>
+                    <div className="hr"></div>
+
+                    <li className="object-details object-">
+                    
+                    <span>2017 - Développeur Web Full-Stack @ INSEP </span>
+                    <p>Stage de 4 mois, Service Inovation Informatique</p>
+                    <p>HTML, CSS, PHP, JS, SQL</p>
+                    <p>Photoshop, Illustrator</p>
+                    </li>
+                    <div className="hr"></div>
+
+                    <li className="object-details object-">
+                        
+                        <span>2015 - WebSchool - Service Autonome de Gestion d'Etablissement Scolaire</span>
+                        <p>Projet Bac: 18/20</p>
+                        <p>HTML, CSS, PHP, JS, JQUERY, BOOSTRAP, AJAX</p>
+                        <p>RaspBerr Pie & SQL database</p>
+                    </li>
+                    <div className="hr"></div>
+
                 </ul>
 
                 <h1 className="title-competence">
-                    Etudes & Diplomes 
+                    Compétences
                 </h1>
                 <div className="hr"></div>
 

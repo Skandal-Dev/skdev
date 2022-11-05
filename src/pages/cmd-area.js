@@ -12,16 +12,13 @@ class CmdArea extends React.Component {
                 Home
             </div>
             <div className="text-area">
-                <code>help</code>
-                <br />
+                
                 <code className="output">
-                Help - Show all commands <br />
-                Go [PAGE] - Navigate to a definate page <br />
-                Ls ([-a]) - Display all pages <br />
-                Music - Pop up Music player <br />
-                Gif - Pop up random Gif <br />
-                Contact [mail] [title] [message] - Send me an email <br />
-                Clear - Clear terminal <br />
+                    <div className="hr"></div>
+                Bienvenue sur mon site personnel !
+                La navigation sur mon site ne se fait qu'uniquement via les fonctions intégré dans l'interprete de commande !
+                Afin de continuer la navigation de manière suivie, veuillez valider les prochaines entrées !
+                N'oublier pas, la fonction Help peut vous guidez à tout moment.
                 </code>
             </div>
             {/*<div class="text-area">
@@ -53,10 +50,13 @@ class CmdArea extends React.Component {
 */}
 
         
-                <Cmd></Cmd>
-                <Cmd></Cmd>
-                <Cmd></Cmd>
+                <Cmd cmd="help"></Cmd>
+                <Cmd cmd="ls"></Cmd>
+                <Cmd cmd="go CV"></Cmd>
+                <Cmd cmd="go NullePart"></Cmd>     
+                <Cmd cmd="go Competences"></Cmd>
                 <Cmd></Cmd>     
+
             </div>
         );       
     }

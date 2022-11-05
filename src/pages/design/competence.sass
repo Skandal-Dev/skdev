@@ -4,12 +4,21 @@ $red-cpt: #dd6060b5
 $orange-cpt: #d9804bc7
 $perfect-cpt: #b8ff98eb
 
-
+.render-color
+    color: #bb83b3
+    line-height: 12px
+    
 
 body
     #competence, #CV
         overflow: hidden
+
         ul
+            &.bg-cmd
+                border-radius: 4px
+                background-color: #2a223e
+                margin-top: 5px
+
             list-style: none
             display: flex
             clear: both
@@ -18,11 +27,13 @@ body
             margin: 5px
             li 
                 margin: 0 10px
-                text-align: center
+                
                 font-size: 11px
                 color: #ffc0cb99
                 line-height: 26px
-                &:hover
+                span
+                    text-align: center !important
+                &.rounded:hover
                     box-shadow: 0 0 5px rgb(124 57 96 / 59%)
         .wrap
             flex-wrap: wrap
@@ -48,8 +59,8 @@ body
         .hr
             width: 55vw
             background: #68486918
-            height: 1px
-            margin: 5px 10px
+            height: 4px
+            margin: 10px 0
             margin-top: 10px
             box-sizing: content-box
             margin-top: -5px
@@ -61,6 +72,7 @@ body
         padding: 8px
         margin: 10px !important
         display: block
+        text-align: center
         &.rounded
             border-radius: 100%
             width: 80px !important
@@ -79,7 +91,6 @@ body
             display: block
             border-radius: 2px
             padding:1px 5px
-    
     .object-competence, .object-cv
         width: 64px
         height: 64px
