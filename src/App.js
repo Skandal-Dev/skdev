@@ -14,14 +14,8 @@ const App = () => {
 	<div className="App">
 		
 	
-		{/*
 		<Particle/>
-		*/}
-		
-		<Particle/>
-
 		<img className="center_logo" src={logo}/>
-
 		<div class="grid">
 			<Module></Module>
 		</div>

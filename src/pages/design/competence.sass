@@ -5,8 +5,9 @@ $orange-cpt: #d9804bc7
 $perfect-cpt: #b8ff98eb
 
 
+
 body
-    #competence
+    #competence, #CV
         overflow: hidden
         ul
             list-style: none
@@ -21,6 +22,8 @@ body
                 font-size: 11px
                 color: #ffc0cb99
                 line-height: 26px
+                &:hover
+                    box-shadow: 0 0 5px rgb(124 57 96 / 59%)
         .wrap
             flex-wrap: wrap
             display: flex
@@ -53,8 +56,31 @@ body
             -webkit-filter: drop-shadow(5px 5px 5px #222)
             filter: drop-shadow(5px 5px 5px #222)
 
-            
-    .object-competence
+    .object-cv
+        width: 120px !important
+        padding: 8px
+        margin: 10px !important
+        display: block
+        &.rounded
+            border-radius: 100%
+            width: 80px !important
+            height: 80px !important
+            span
+                margin-top: 24px !important
+                padding: 5px
+                border-radius: 8px
+        &:hover
+            background-image: url(https://media1.giphy.com/media/O05b69yf8ULAlDnTKs/giphy.gif?cid=790b761…&rid=giphy.gif&ct=g)
+            background-position-y: center
+            background-blend-mode: color-burn
+            color: white !important
+            font-weight: bolder !important
+        span
+            display: block
+            border-radius: 2px
+            padding:1px 5px
+    
+    .object-competence, .object-cv
         width: 64px
         height: 64px
         border-radius: 5px
@@ -74,6 +100,8 @@ body
             box-shadow: inset 0px 8px 0px 0px #494b4d4d
         &.green-cpt::before
             background: $green-cpt
+        &.grey-cpt::before
+            background: #433e55
         &.perfect-cpt::before
             background: $perfect-cpt
         &.orange-cpt::before
@@ -100,3 +128,8 @@ body
             transform: scale(1.2)
         .adjust-cpt-img
             transform: scale(1)
+
+        span
+            font-size: 10px
+            line-height: 10px
+            margin: 0px

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Competence from "./competence";
+import Cmd from "./cmd/cdm";
 
 class CmdArea extends React.Component {
 
@@ -10,7 +11,7 @@ class CmdArea extends React.Component {
             <div class="text-label">
                 Home
             </div>
-            <div class="text-area">
+            <div className="text-area">
                 <code>help</code>
                 <br />
                 <code className="output">
@@ -23,7 +24,7 @@ class CmdArea extends React.Component {
                 Clear - Clear terminal <br />
                 </code>
             </div>
-            <div class="text-area">
+            {/*<div class="text-area">
             <code>ls</code>
             <br />
             <code className="output">
@@ -42,15 +43,20 @@ class CmdArea extends React.Component {
                 <br />
                 <code className="output">Moving to CV ...</code>
                 <Competence />
-            </div>
+        </div>  
 
             <div class="text-area">
                 <code>go CV</code>
                 <br />
                 <code className="output">Moving to CV ...</code>
             </div>
+*/}
+
         
-            
+                <Cmd></Cmd>
+                <Cmd></Cmd>
+                <Cmd></Cmd>
+                <Cmd></Cmd>     
             </div>
         );       
     }
