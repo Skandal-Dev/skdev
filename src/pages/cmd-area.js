@@ -5,6 +5,11 @@ import Cmd from "./cmd/cdm";
 
 class CmdArea extends React.Component {
 
+    setInput(e){
+        if (e.key == 'Enter')
+            alert('hey')
+        return 'rien'
+    }
     render() {
         return (
             <div class="code-area">
@@ -50,12 +55,12 @@ class CmdArea extends React.Component {
 */}
 
         
-                <Cmd cmd="help"></Cmd>
+                {/*<Cmd cmd="help"></Cmd>
                 <Cmd cmd="ls"></Cmd>
                 <Cmd cmd="go CV"></Cmd>
                 <Cmd cmd="go NullePart"></Cmd>     
-                <Cmd cmd="go Competences"></Cmd>
-                <Cmd></Cmd>     
+                <Cmd cmd="go Competences"></Cmd>*/}
+                <Cmd  onKeyDown={this.setInput} ></Cmd>     
 
             </div>
         );       

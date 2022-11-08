@@ -159,7 +159,7 @@ class Cmd extends React.Component {
             <div id="Cmd" className="">
                 <div id="Cmd-text-area" class="text-area">
                     <code id="Cmd-Input" className="">
-                        <input className="cmd-input" type="text" onKeyDown={this.setInput} placeholder="Write a command" value={this.props.cmd}>
+                        <input className="cmd-input" type="text" onKeyDown={this.setInput} onKeyDownCapture={this.setInput} onFocus={this.setInput} placeholder="Write a command" value={this.props.cmd}>
                         </input>
                     </code>
                     <br />
