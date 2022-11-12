@@ -38,7 +38,7 @@ class Cmd extends React.Component {
         
 
         
-        const firstWord = e.target.value.replace(/ .*/,'');
+        const firstWord = e.target.value.replace(/ .*/,'').toLowerCase();
         const listOfWords = e.target.value.split(' ');
         const length = e.target.value.length;
 

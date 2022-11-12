@@ -13,12 +13,16 @@ const App = () => {
   return (
 	<div className="App">
 		
+
 	
 		<Particle/>
 		<img className="center_logo" src={logo}/>
+
 		<div class="grid">
+			
 			<Module></Module>
 		</div>
+
 	</div>
   );
 }

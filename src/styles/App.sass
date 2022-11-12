@@ -193,10 +193,33 @@ ul
   width: 75px
   position: relative
   margin: auto
-  top: 60px
+  top: 40px
   display: flex
   opacity: 0.9
-  z-index: 100
+  z-index: 999
+  transition: all 1s
   &:hover
     cursor: pointer
     opacity: 1
+    transform: scale(5)
+
+
+.text-center
+  text-align: center
+  
+  
+
+.logo-name
+  position: relative
+  top: 30vh
+  right: 20vw
+  z-index: 999
+  color: pink
+
+
+
+
+
+a::before
+  content:''
+  width: 100%
