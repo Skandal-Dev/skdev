@@ -201,7 +201,7 @@ ul
   &:hover
     cursor: pointer
     opacity: 1
-    transform: scale(5)
+    transform: scale(2)
 
 
 .text-center
@@ -223,3 +223,38 @@ ul
 a::before
   content:''
   width: 100%
+
+
+#Portfolio
+
+  ul
+    margin: 0
+    margin-top: 20px
+    list-style: none
+    display: flex
+    li
+      width: 150px !important
+      height: 50px !important
+      margin: 5px
+      border: 1px solid #f9f9f9
+      border-radius: 4px
+      background: url('/bg-card/bg1.gif')
+      background-size: 100% 50px !important
+      &:nth-child(2)
+        background: url('/bg-card/bg2.gif')
+      &:nth-child(3)
+        background: url('/bg-card/bg3.gif')
+      &:nth-child(4)
+        background: url('/bg-card/bg4.gif')
+      &:nth-child(5)
+        background: url('/bg-card/bg5.gif')
+      &:nth-child(6)
+        background: url('/bg-card/bg6.gif')
+
+  .poster
+    margin: 5px
+    width: calc( 100% - 10px )
+    height: 200px
+    border: 1px solid #f9f9f9
+    border-radius: 4px
+    background: url('/bg-card/poster1.gif')

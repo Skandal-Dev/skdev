@@ -9,7 +9,7 @@ class Projects extends React.Component{
             <div id="Projects">
                 <h1 className="title-competence">
                     Projects
-                </h1>,
+                </h1>
                
             </div>
         )

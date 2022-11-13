@@ -60,7 +60,7 @@ class CmdArea extends React.Component {
                 <Cmd cmd="go CV"></Cmd>
                 <Cmd cmd="go NullePart"></Cmd>     
                 <Cmd cmd="go Competences"></Cmd>*/}
-                <Cmd  onKeyDown={this.setInput} ></Cmd>     
+                <Cmd onKeyDown={this.setInput} ></Cmd>     
 
             </div>
         );       
